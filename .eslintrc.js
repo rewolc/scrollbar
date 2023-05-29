@@ -1,16 +1,16 @@
 module.exports = {
   parser: "@babel/eslint-parser",
   parserOptions: {
-    sourceType: "module"
+    sourceType: "module",
   },
-  extends: [
-  ],
-  plugins: [
-  ],
-  rules:{},
+  plugins: ["import-rules"],
+  extends: [],
+  rules: {
+    "import-rules/import-rules": [2, { include: [], exclude: [] }],
+  },
   settings: {
     "import/resolver": {
-      typescript: {}
+      typescript: {},
     },
   },
 };

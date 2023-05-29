@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "eslint": "^8.41.0",
+    "eslint-plugin-import": "^2.27.5",
     "jest": "^27.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -19,8 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-
+    "eject": "react-scripts eject",
+    "lint": "eslint js --rulesdir rules",
+    "lint-new": "eslint src/**/*.js"
   },
   "eslintConfig": {
     "extends": [
@@ -41,7 +43,7 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-import": "^1.13.6"
+    "babel-plugin-import": "^1.13.6",
+    "eslint-plugin-import-rules": "file:import-rules"
   }
-
 }
